@@ -106,7 +106,7 @@ export default class Cv extends React.Component {
     let objIndex = this.state.workInfo.findIndex(
       (obj) => obj.id === e.target.parentElement.getAttribute("data-id")
     );
-    let list = this.state.educationInfo;
+    let list = this.state.workInfo;
 
     const target = e.target;
     const value = target.value;
@@ -135,7 +135,11 @@ export default class Cv extends React.Component {
           deleteWork={this.handleDeleteWork}
           handleWorkOnChange={this.handleWorkOnChange}
         />
-        <Preview personalInfo={this.state.personalInfo} />
+        <Preview
+          personalInfo={this.state.personalInfo}
+          educationInfo={this.state.educationInfo}
+          workInfo={this.state.workInfo}
+        />
       </div>
     );
   }

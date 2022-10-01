@@ -31,12 +31,17 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding: 25px;
   max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .cv {
   display: flex;
   gap: 50px;
   justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -69,7 +74,7 @@ h1 {
 
 .preview-name {
   color: #201775;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .preview-info {
@@ -88,4 +93,31 @@ h1 {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.preview-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.preview-section-item {
+  display: flex;
+  gap: 50px;
+}
+
+.preview-section-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.preview-section-time {
+  min-width: 100px;
+  font-weight: 600;
+}
+
+.preview-position,
+.preview-subject {
+  font-weight: 600;
 }
