@@ -62,7 +62,7 @@ const Cv = () => {
       [name]: value,
     };
 
-    setEducationInfo(list);
+    setEducationInfo([...list]);
   };
 
   const handleAddWork = () => {
@@ -101,7 +101,7 @@ const Cv = () => {
       [name]: value,
     };
 
-    workInfo(list);
+    setWorkInfo([...list]);
   };
 
   return (
